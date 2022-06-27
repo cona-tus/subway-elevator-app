@@ -1,0 +1,16 @@
+.weway {
+  width: 31.25rem;
+  height: 37.5rem;
+  position: relative;
+  background: $color--white;
+  background: radial-gradient(
+    circle,
+    $color--white 0%,
+    $color--light-green 100%
+  );
+  border: 10px solid $color--white;
+  border-radius: $border--regular;
+  @include out-shadow;
+
+  z-index: 1;
+}

@@ -1,0 +1,21 @@
+// background image
+.custom-shape-divider-top-1655798555 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  line-height: 0;
+  overflow: hidden;
+
+  svg {
+    width: calc(153% + 1.3px);
+    height: 485px;
+    display: block;
+    position: relative;
+  }
+
+  .shape-fill {
+    fill: url('#gradient');
+  }
+}

@@ -1,0 +1,22 @@
+.icon {
+  width: 3.125rem;
+  height: 3.125rem;
+  @include display-center;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: $color--green;
+  background: linear-gradient(0deg, $color--green 0%, $color--light-green 100%);
+  border-radius: 10px;
+
+  @include out-shadow;
+
+  z-index: 1;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

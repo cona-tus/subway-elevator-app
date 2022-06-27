@@ -1,0 +1,77 @@
+main {
+  @include display-center;
+
+  .search-form {
+    width: 100%;
+    @include display-center;
+    flex-direction: column;
+
+    .search-container {
+      position: relative;
+      margin-bottom: $margin--regular;
+
+      .search {
+        border: none;
+        border-radius: $border--regular;
+        padding: calc($padding--regular / 2) $padding--regular;
+
+        @include in-shadow;
+
+        &::placeholder {
+          @extend %inputText;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .result-container {
+      width: 100%;
+      height: 25rem;
+      overflow: auto;
+      @include scrollbar;
+      opacity: 0;
+      @extend %transition;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .search-header {
+        @extend %grid;
+
+        span {
+          @extend %mainText;
+          text-align: center;
+          padding: calc($padding--wide / 2);
+        }
+      }
+
+      .search-list {
+        text-align: center;
+
+        .list {
+          @extend %grid;
+          background-color: $color--light-purple;
+          padding: calc($padding--wide / 2);
+          @extend %transition;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.5;
+          }
+
+          + .list {
+            border-top: 1px solid $color--white;
+          }
+
+          span {
+            @extend %mainText;
+          }
+        }
+      }
+    }
+  }
+}

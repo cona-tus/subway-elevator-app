@@ -1,0 +1,13 @@
+header {
+  @include display-center;
+  flex-direction: column;
+  padding: $padding--wide;
+
+  .title {
+    @extend %logoTitle;
+  }
+
+  .subtitle {
+    @extend %subTitle;
+  }
+}

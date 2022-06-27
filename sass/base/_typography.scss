@@ -1,0 +1,34 @@
+body {
+  font-size: 1rem;
+}
+
+%logoTitle {
+  color: $color--teal;
+  font-family: 'Coiny', cursive;
+  font-size: $font--medium;
+  font-weight: $weight--regular;
+  letter-spacing: -1.2px;
+}
+
+%subTitle {
+  color: $color--grey;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: $font--small;
+  font-weight: $weight--regular;
+  letter-spacing: 1.05px;
+}
+
+%mainText {
+  color: $color--black;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: $font--small;
+  font-weight: $weight--light;
+  letter-spacing: 1.05px;
+}
+
+%inputText {
+  color: $color--grey;
+  font-size: $font--small;
+  font-weight: $weight--regular;
+  letter-spacing: 1.1px;
+}
