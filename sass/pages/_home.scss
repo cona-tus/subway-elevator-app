@@ -1,6 +1,6 @@
 .weway {
-  width: 31.25rem;
-  height: 37.5rem;
+  width: 31.25rem; // 500px
+  height: 37.5rem; // 600px
   position: relative;
   background: $color--white;
   background: radial-gradient(
@@ -10,7 +10,12 @@
   );
   border: 10px solid $color--white;
   border-radius: $border--regular;
-  @include out-shadow;
-
+  @extend %out-shadow;
   z-index: 1;
+
+  @include mobile {
+    width: 25rem; // 400px
+    height: 31.25rem; // 500px
+    margin: $margin--regular;
+  }
 }

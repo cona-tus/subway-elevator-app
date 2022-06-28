@@ -1,7 +1,7 @@
 .icon {
   width: 3.125rem;
   height: 3.125rem;
-  @include display-center;
+  @extend %flex-center;
   position: absolute;
   top: -10px;
   left: 50%;
@@ -11,7 +11,7 @@
   background: linear-gradient(0deg, $color--green 0%, $color--light-green 100%);
   border-radius: 10px;
 
-  @include out-shadow;
+  @extend %out-shadow;
 
   z-index: 1;
 

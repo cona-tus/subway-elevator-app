@@ -8,16 +8,12 @@ main .search-form .result-container .search-list .list, main .search-form .resul
 }
 
 body {
-  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #ffffff;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 header .title {
@@ -27,6 +23,11 @@ header .title {
   font-weight: 400;
   letter-spacing: -1.2px;
 }
+@media (min-width: 335px) and (max-width: 757px) {
+  header .title {
+    font-size: 1.25rem;
+  }
+}
 
 header .subtitle {
   color: #919191;
@@ -34,6 +35,11 @@ header .subtitle {
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 1.05px;
+}
+@media (min-width: 335px) and (max-width: 757px) {
+  header .subtitle {
+    font-size: 0.625rem;
+  }
 }
 
 main .search-form .result-container .search-list .list span, main .search-form .result-container .search-header span {
@@ -43,12 +49,22 @@ main .search-form .result-container .search-list .list span, main .search-form .
   font-weight: 300;
   letter-spacing: 1.05px;
 }
+@media (min-width: 335px) and (max-width: 757px) {
+  main .search-form .result-container .search-list .list span, main .search-form .result-container .search-header span {
+    font-size: 0.625rem;
+  }
+}
 
 main .search-form .search-container .search::placeholder {
   color: #919191;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 1.1px;
+}
+@media (min-width: 335px) and (max-width: 757px) {
+  main .search-form .search-container .search::placeholder {
+    font-size: 0.625rem;
+  }
 }
 
 .custom-shape-divider-top-1655798555 {
@@ -70,12 +86,17 @@ main .search-form .search-container .search::placeholder {
   fill: url("#gradient");
 }
 
+main .search-form .search-container .search {
+  box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.weway, .icon {
+  box-shadow: 1px 2px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
 .icon {
   width: 3.125rem;
   height: 3.125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: -10px;
   left: 50%;
@@ -83,12 +104,25 @@ main .search-form .search-container .search::placeholder {
   background: #36e8c3;
   background: linear-gradient(0deg, #36e8c3 0%, #e8f3f1 100%);
   border-radius: 10px;
-  box-shadow: 1px 2px 30px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 .icon img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+main .search-form .result-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .search-form .result-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+main .search-form, main, header, body, .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .search-form .result-container .search-list .list, main .search-form .result-container .search-header {
@@ -97,22 +131,11 @@ main .search-form .result-container .search-list .list, main .search-form .resul
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 1.875em;
 }
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 main .search-form {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 main .search-form .search-container {
@@ -123,7 +146,6 @@ main .search-form .search-container .search {
   border: none;
   border-radius: 1.25rem;
   padding: 0.625em 1.25em;
-  box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.1);
 }
 main .search-form .search-container .search:focus {
   outline: none;
@@ -132,12 +154,12 @@ main .search-form .result-container {
   width: 100%;
   height: 25rem;
   overflow: auto;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
   opacity: 0;
 }
-main .search-form .result-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+@media (min-width: 335px) and (max-width: 757px) {
+  main .search-form .result-container {
+    height: 21.875rem;
+  }
 }
 main .search-form .result-container.active {
   opacity: 1;
@@ -168,8 +190,14 @@ main .search-form .result-container .search-list .list + .list {
   background: radial-gradient(circle, #ffffff 0%, #e8f3f1 100%);
   border: 10px solid #ffffff;
   border-radius: 1.25rem;
-  box-shadow: 1px 2px 30px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+}
+@media (min-width: 335px) and (max-width: 757px) {
+  .weway {
+    width: 25rem;
+    height: 31.25rem;
+    margin: 1.25em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

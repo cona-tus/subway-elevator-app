@@ -8,8 +8,11 @@
 @import 'base/typography';
 
 @import 'components/background';
+@import 'components/box';
 @import 'components/icon';
+@import 'components/scrollbar';
 
+@import 'layout/flex';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/main';
