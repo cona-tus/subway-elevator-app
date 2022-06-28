@@ -1,9 +1,13 @@
 # WeWay
 
-<!-- <a href="https://conatus-weway.netlify.app/">
-<img src="./images/favicon.png" style="border-radius: 10px; width: 100px" /></a> -->
+<a href="https://conatus-weway.netlify.app/">
+<img src="./images/weway.jpg" alt="WeWay" />
+</a>
 
-<img src="./images/weway.png" />
+<br/>
+
+<a href="https://conatus-weway.netlify.app/">
+<img src="./images/favicon.png" style="border-radius: 10px; width: 50px" alt="Go to WeWay Website"/></a>
 
 <br/>
 
